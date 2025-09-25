@@ -30,7 +30,7 @@ int main(){
 	printf("Connected to server.\n");
 
 	// Send & Receive
-	while(fgets(buffer, BUFFER_SIZE - 1, stdin) != NULL){
+	while(scanf(" %1023[^\n]", buffer) == 1){
 		buffer[strcspn(buffer, "\n")] = 0;
 
 		send(sock, buffer, strlen(buffer), 0);
