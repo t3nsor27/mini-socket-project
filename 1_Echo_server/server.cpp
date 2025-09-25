@@ -4,10 +4,6 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
-// #define PORT 8000
-// #define BUFFER_SIZE 1024
-// #define END_STRING "end"
-
 int main() {
 	int server_fd;
 	sockaddr_in addr{};
