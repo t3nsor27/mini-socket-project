@@ -3,4 +3,5 @@
 misc/
 server
 client
-*.jpg
+input.*
+output.*
